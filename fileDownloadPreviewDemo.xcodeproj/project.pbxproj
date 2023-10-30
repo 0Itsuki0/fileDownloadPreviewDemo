@@ -13,6 +13,8 @@
 		98B1FC812AEF2B3B006CC091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B1FC7F2AEF2B3B006CC091 /* Main.storyboard */; };
 		98B1FC832AEF2B3C006CC091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B1FC822AEF2B3C006CC091 /* Assets.xcassets */; };
 		98B1FC862AEF2B3C006CC091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B1FC842AEF2B3C006CC091 /* LaunchScreen.storyboard */; };
+		98B1FC8E2AEF2BBC006CC091 /* FilePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B1FC8D2AEF2BBC006CC091 /* FilePreviewController.swift */; };
+		98B1FC902AEF2BEB006CC091 /* FileShareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B1FC8F2AEF2BEB006CC091 /* FileShareModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		98B1FC822AEF2B3C006CC091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98B1FC852AEF2B3C006CC091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98B1FC872AEF2B3C006CC091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B1FC8D2AEF2BBC006CC091 /* FilePreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewController.swift; sourceTree = "<group>"; };
+		98B1FC8F2AEF2BEB006CC091 /* FileShareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				98B1FC792AEF2B3B006CC091 /* AppDelegate.swift */,
 				98B1FC7B2AEF2B3B006CC091 /* SceneDelegate.swift */,
 				98B1FC7D2AEF2B3B006CC091 /* ViewController.swift */,
+				98B1FC8D2AEF2BBC006CC091 /* FilePreviewController.swift */,
+				98B1FC8F2AEF2BEB006CC091 /* FileShareModel.swift */,
 				98B1FC7F2AEF2B3B006CC091 /* Main.storyboard */,
 				98B1FC822AEF2B3C006CC091 /* Assets.xcassets */,
 				98B1FC842AEF2B3C006CC091 /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B1FC8E2AEF2BBC006CC091 /* FilePreviewController.swift in Sources */,
 				98B1FC7E2AEF2B3B006CC091 /* ViewController.swift in Sources */,
 				98B1FC7A2AEF2B3B006CC091 /* AppDelegate.swift in Sources */,
 				98B1FC7C2AEF2B3B006CC091 /* SceneDelegate.swift in Sources */,
+				98B1FC902AEF2BEB006CC091 /* FileShareModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +298,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = fileDownloadPreviewDemo/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,6 +317,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itsuki.fileDownloadPreviewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,10 +329,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = fileDownloadPreviewDemo/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,6 +348,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = itsuki.fileDownloadPreviewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
